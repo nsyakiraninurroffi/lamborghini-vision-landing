@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Laporan Dokumentasi - Lamborghini Vision</title>
+<style>
+  @page { size: A4; margin: 20mm; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Arial, sans-serif; color: #1a1a2e; line-height: 1.8; font-size: 11pt; background: #fff; }
+  h1, h2, h3, h4 { font-family: Georgia, serif; color: #0B0914; }
+
+  .header-block {
+    background: linear-gradient(135deg, #0B0914 0%, #1a1028 60%, #2d1a3e 100%);
+    color: #fff; padding: 50px 40px; text-align: center; border-radius: 12px;
+    margin-bottom: 40px; page-break-inside: avoid;
+  }
+  .header-block h1 { font-size: 26pt; letter-spacing: 3px; margin-bottom: 6px; color: #fff; }
+  .header-block .subtitle { color: #B76E79; font-size: 11pt; letter-spacing: 2px; margin-bottom: 30px; text-transform: uppercase; }
+  .header-block .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 30px; text-align: left; max-width: 520px; margin: 0 auto; }
+  .header-block .meta-label { color: #B76E79; font-size: 8pt; text-transform: uppercase; letter-spacing: 1.5px; }
+  .header-block .meta-value { color: #e0d6e8; font-size: 10pt; margin-bottom: 8px; }
+  .header-block .repo-link { display: inline-block; margin-top: 20px; color: #B76E79; font-size: 9pt; word-break: break-all; text-decoration: none; border: 1px solid rgba(183,110,121,0.3); padding: 8px 20px; border-radius: 20px; }
+
+  .section { margin-bottom: 35px; page-break-inside: avoid; }
+  .section h2 { font-size: 16pt; color: #0B0914; border-bottom: 3px solid #B76E79; padding-bottom: 8px; margin-bottom: 18px; }
+  .section h3 { font-size: 13pt; color: #4A154B; margin: 20px 0 10px; }
+  .section p { text-align: justify; margin-bottom: 12px; color: #2d2d44; }
+
+  .tech-badge-row { display: flex; flex-wrap: wrap; gap: 10px; margin: 15px 0 20px; }
+  .tech-badge { background: #f0ecf5; border: 1px solid #d6cfe0; padding: 6px 16px; border-radius: 20px; font-size: 9pt; color: #4A154B; font-weight: 600; }
+
+  .img-block { page-break-inside: avoid; margin: 25px 0; }
+  .img-block img { width: 100%; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin-bottom: 15px; border: 1px solid #e2e8f0; }
+  .img-block .caption { font-size: 9pt; color: #888; text-align: center; margin-bottom: 8px; font-style: italic; }
+
+  .code-ref { background: #f4f0f8; border-left: 4px solid #B76E79; padding: 10px 16px; margin: 12px 0; font-family: 'Courier New', monospace; font-size: 9pt; color: #3d2b50; border-radius: 0 6px 6px 0; }
+
+  .footer-doc { text-align: center; padding: 30px 0 10px; border-top: 2px solid #e2e8f0; margin-top: 40px; color: #888; font-size: 9pt; }
+
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; font-size: 10pt; }
+  th { background: #0B0914; color: #B76E79; padding: 10px 14px; text-align: left; font-size: 9pt; text-transform: uppercase; letter-spacing: 1px; }
+  td { padding: 10px 14px; border-bottom: 1px solid #e8e4ee; color: #2d2d44; }
+  tr:nth-child(even) td { background: #faf8fc; }
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<div class="header-block">
+  <h1>LAPORAN DOKUMENTASI APLIKASI</h1>
+  <p class="subtitle">Multi-Page Landing Page Animasi: Lamborghini Vision</p>
+  <div class="meta-grid">
+    <div><div class="meta-label">Nama Pengembang</div><div class="meta-value">Nesya Kirani Nurroffi (Absen 27)</div></div>
+    <div><div class="meta-label">Kelas / Program Keahlian</div><div class="meta-value">XI PPLG-RPL 2 / PPLG</div></div>
+    <div><div class="meta-label">Kepala Program Keahlian</div><div class="meta-value">Pak Yaqub Hadi Permana</div></div>
+    <div><div class="meta-label">Jenis Proyek</div><div class="meta-value">Landing Page Animasi Premium</div></div>
+  </div>
+  <a class="repo-link" href="https://github.com/nsyakiraninurroffi/lamborghini-vision-landing" target="_blank">github.com/nsyakiraninurroffi/lamborghini-vision-landing</a>
+</div>
+
+<!-- ============ PENDAHULUAN ============ -->
+<div class="section">
+  <h2>1. Pendahuluan &amp; Arsitektur Proyek</h2>
+  <p>Proyek <strong>"Lamborghini Vision"</strong> merupakan sebuah aplikasi web <em>multi-page landing page</em> yang dirancang dengan pendekatan estetika <em>Dark Feminine</em> dan <em>Modern Tech-Core</em>. Aplikasi ini dibangun menggunakan arsitektur <em>Single Page Application</em> (SPA) berbasis komponen React.js, di mana seluruh navigasi antar halaman dikelola secara deklaratif melalui <em>client-side routing</em> tanpa memerlukan <em>full-page reload</em> dari server.</p>
+
+  <p>Arsitektur proyek ini memanfaatkan <strong>Vite</strong> sebagai <em>build tool</em> dan <em>development server</em> yang menawarkan <em>Hot Module Replacement</em> (HMR) dengan kecepatan tinggi. Sistem <em>routing</em> diimplementasikan menggunakan <code>react-router-dom</code> dengan pola <code>BrowserRouter</code> &rarr; <code>Routes</code> &rarr; <code>Route</code>, sementara transisi antar halaman dibungkus dalam komponen <code>AnimatePresence</code> dari Framer Motion dengan atribut <code>mode="wait"</code> untuk memastikan animasi keluar (<em>exit</em>) selesai sebelum halaman baru dimuat.</p>
+
+  <h3>1.1 Technology Stack</h3>
+  <div class="tech-badge-row">
+    <span class="tech-badge">React.js 19</span>
+    <span class="tech-badge">Vite 8</span>
+    <span class="tech-badge">Tailwind CSS v3</span>
+    <span class="tech-badge">Framer Motion 12</span>
+    <span class="tech-badge">React Router DOM 7</span>
+    <span class="tech-badge">Lucide React Icons</span>
+  </div>
+
+  <h3>1.2 Sistem Desain Kustom</h3>
+  <p>Seluruh identitas visual diatur melalui konfigurasi <code>tailwind.config.js</code> dengan tiga warna kustom utama: <strong>Midnight Violet</strong> (<code>#0B0914</code>) sebagai latar utama, <strong>Rose Gold</strong> (<code>#B76E79</code>) sebagai aksen premium, dan <strong>Deep Plum</strong> (<code>#4A154B</code>) sebagai warna pendukung. Tipografi menggunakan font <em>Playfair Display</em> (serif) untuk judul besar dan <em>Inter</em> (sans-serif) untuk teks isi, keduanya dimuat melalui Google Fonts.</p>
+
+  <p>Utilitas Glassmorphism dibuat secara kustom di dalam <code>@layer components</code> pada file <code>index.css</code>, meliputi kelas <code>.glass</code> (<code>bg: rgba(255,255,255,0.05)</code>, <code>backdrop-filter: blur(12px)</code>, <code>border: 1px solid rgba(183,110,121,0.3)</code>), <code>.glass-dark</code>, <code>.glass-input</code>, serta utilitas <code>.glow-rose</code> dan <code>.text-gradient</code> untuk efek cahaya dan gradien teks.</p>
+
+  <h3>1.3 Struktur Direktori</h3>
+  <table>
+    <tr><th>Direktori / File</th><th>Keterangan</th></tr>
+    <tr><td><code>src/components/</code></td><td>Komponen global: Navbar, Footer, CustomCursor, PageTransition, ScrollToTop</td></tr>
+    <tr><td><code>src/pages/</code></td><td>Halaman: Home, Specs, Gallery, Contact</td></tr>
+    <tr><td><code>src/index.css</code></td><td>Tailwind directives, utilitas Glassmorphism, animasi keyframe</td></tr>
+    <tr><td><code>src/App.jsx</code></td><td>Root component dengan BrowserRouter dan AnimatePresence</td></tr>
+    <tr><td><code>public/assets/</code></td><td>Aset statis: video hero, gambar galeri, logo</td></tr>
+  </table>
+</div>
+
+<!-- ============ DOKUMENTASI UI ============ -->
+<div class="section">
+  <h2>2. Dokumentasi Antarmuka (UI/UX)</h2>
+</div>
+
+<!-- 2.1 SPLASH SCREEN -->
+<div class="section">
+  <h3>2.1 Splash Screen (Gatekeeper)</h3>
+  <div class="img-block">
+    <img src="./ss-splash.png" alt="Splash Screen" />
+    <p class="caption">Gambar 1 — Tampilan Splash Screen dengan tombol "Enter the Experience"</p>
+  </div>
+  <p>Komponen <em>Splash Screen</em> berfungsi sebagai <strong>Gatekeeper</strong> yang mengatasi limitasi kebijakan <em>autoplay</em> audio pada peramban modern (Chrome, Safari). Peramban memblokir pemutaran media dengan suara (<code>unmuted</code>) kecuali pengguna telah berinteraksi terlebih dahulu dengan halaman. Oleh karena itu, layar ini menjadi syarat wajib sebelum video hero diputar dengan suara aktif.</p>
+
+  <p>Secara teknis, kontainer splash menggunakan kelas Tailwind <code>fixed inset-0 z-[100] w-full h-screen flex flex-col items-center justify-center bg-midnight-violet overflow-hidden</code>, yang memastikan seluruh <em>viewport</em> tertutupi tanpa kemungkinan pengguna melakukan <em>scroll</em>. Logo resmi Lamborghini dimuat melalui tag <code>&lt;img&gt;</code> dengan path <code>/assets/images/gallery/logo_lamborghini.png</code> dan dibungkus dalam <code>motion.div</code> dengan animasi <em>spring</em> (<code>type: 'spring'</code>) yang memberikan efek <em>bounce</em> halus saat muncul.</p>
+
+  <div class="code-ref">
+    Animasi Keluar: <code>exit={{ opacity: 0 }}</code> dengan <code>transition={{ duration: 0.8, ease: 'easeInOut' }}</code><br/>
+    Tombol CTA: Kelas <code>animate-pulse-glow</code> — animasi CSS keyframe berdurasi 2.5 detik yang membuat <code>box-shadow</code> Rose Gold berkedip halus secara kontinu.<br/>
+    Scroll Reset: <code>window.scrollTo(0, 0)</code> dipanggil sebelum <code>setSplashVisible(false)</code> agar posisi scroll kembali ke atas.
+  </div>
+</div>
+
+<!-- 2.2 HOME HERO -->
+<div class="section">
+  <h3>2.2 Home — Hero Section</h3>
+  <div class="img-block">
+    <img src="./ss-home.png" alt="Home Hero" />
+    <p class="caption">Gambar 2 — Hero Section dengan video latar belakang dan overlay gradien</p>
+  </div>
+  <p>Setelah splash screen menghilang, elemen <code>&lt;video&gt;</code> yang telah di-<em>preload</em> (<code>preload="auto"</code>) mulai diputar melalui metode imperatif <code>videoRef.current.play()</code> di dalam <code>useEffect</code> yang dipicu oleh perubahan state <code>splashVisible</code>. Video diatur dengan <code>muted = false</code> dan <code>volume = 0.6</code>. Sebagai mekanisme <em>fallback</em>, jika <code>.play()</code> gagal (promise rejected), video akan diputar ulang dalam mode <em>muted</em> agar pengalaman visual tetap terjaga.</p>
+
+  <p>Elemen video diposisikan secara absolut (<code>absolute inset-0 w-full h-screen object-cover object-center</code>) di dalam kontainer relatif. Di atasnya, lapisan <code>.hero-overlay</code> memberikan gradien radial (<code>radial-gradient</code> dengan tiga titik henti warna: transparan di pusat, semi-transparan di tengah, dan hampir opaque di tepi) untuk memastikan keterbacaan teks di atasnya.</p>
+
+  <p>Konten hero — termasuk teks "Elegance, Unleashed.", sub-headline, dan tiga tombol CTA (Discover More, VIP Inquiry, Gallery) — muncul secara bertahap menggunakan properti <code>delay</code> berjenjang (0.5s, 0.6s, 0.8s, 1.2s, 1.5s) pada masing-masing <code>motion</code> element. Navbar glassmorphism (<code>fixed top-0 z-50</code>) menggunakan <code>useEffect</code> dengan event listener <code>scroll</code> untuk beralih antara latar transparan dan <code>.glass-dark</code> saat <code>scrollY &gt; 50</code>.</p>
+
+  <div class="code-ref">
+    Video Playback: <code>useEffect(() =&gt; { video.muted = false; video.play().catch(() =&gt; { video.muted = true; video.play(); }); }, [splashVisible])</code><br/>
+    Custom Cursor: Komponen terpisah (<code>CustomCursor.jsx</code>) dengan dua elemen — titik kecil yang mengikuti mouse secara instan, dan lingkaran besar yang mengikuti dengan <code>useSpring({ stiffness: 150, damping: 20 })</code>.
+  </div>
+</div>
+
+<!-- 2.3 SPECS -->
+<div class="section">
+  <h3>2.3 Halaman Spesifikasi — Bento Box UI</h3>
+  <div class="img-block">
+    <img src="./ss-specs.png" alt="Spesifikasi Bento Box" />
+    <p class="caption">Gambar 3 — Tata letak Bento Grid untuk data spesifikasi teknis</p>
+  </div>
+  <p>Halaman Spesifikasi mengimplementasikan pola desain <strong>Bento Box UI</strong> — sebuah tata letak grid asimetris yang terinspirasi dari kotak <em>bento</em> Jepang. Struktur dasarnya menggunakan <code>grid grid-cols-1 md:grid-cols-3 gap-5</code>, di mana masing-masing kartu dapat menempati ruang berbeda melalui kelas Tailwind <code>md:col-span-2</code> atau <code>md:row-span-2</code>, menciptakan hierarki visual yang dinamis.</p>
+
+  <p>Setiap kartu spesifikasi dibungkus dalam <code>motion.div</code> dengan animasi <em>scroll-reveal</em> (<code>whileInView</code>) yang memiliki <code>viewport: { once: true }</code> agar animasi hanya dipicu sekali. Efek hover menggunakan <code>whileHover={{ y: -8, scale: 1.08 }}</code> dengan durasi transisi 0.15 detik untuk respons yang cepat dan tajam. Kelas <code>.glow-rose</code> bertransisi ke <code>.glow-rose-intense</code> saat hover dengan durasi 300ms, memberikan efek cahaya Rose Gold yang semakin intens pada <em>border</em> glassmorphism.</p>
+
+  <p>Di bagian bawah halaman, sebuah <em>stat bar</em> menampilkan empat metrik performa (0-100 km/h: 2.8s, 0-200 km/h: 8.6s, Berat: 1.550 kg, Silinder: 12) menggunakan kelas <code>.text-gradient</code> yang mengaplikasikan <code>background: linear-gradient(135deg, #B76E79, #c9828c, #e8b4bc)</code> dengan <code>-webkit-background-clip: text</code>.</p>
+</div>
+
+<!-- 2.4 GALLERY -->
+<div class="section">
+  <h3>2.4 Halaman Gallery — Masonry Grid</h3>
+  <div class="img-block">
+    <img src="./ss-gallery.png" alt="Gallery Masonry" />
+    <p class="caption">Gambar 4 — Masonry grid dengan efek fokus hover pada galeri</p>
+  </div>
+  <p>Halaman Gallery mengimplementasikan tata letak <strong>Masonry Grid</strong> menggunakan properti CSS <code>columns-1 sm:columns-2 lg:columns-3</code> dengan <code>gap-5 space-y-5</code>, yang secara otomatis mengalirkan item ke dalam kolom tanpa memerlukan library tambahan. Setiap item galeri memiliki kelas <code>break-inside-avoid</code> untuk mencegah pemotongan elemen antar kolom.</p>
+
+  <p>Fitur interaksi unggulan pada halaman ini adalah <strong>trik CSS parent-hover</strong> untuk efek fokus. Ketika pengguna mengarahkan kursor ke area grid (<code>.gallery-grid:hover</code>), seluruh item anak akan menerima <code>filter: blur(2px) saturate(0.4)</code> dan <code>opacity: 0.6</code>. Namun, item yang secara spesifik sedang di-hover (<code>.gallery-grid:hover .gallery-item:hover</code>) akan dikembalikan ke <code>filter: blur(0) saturate(1)</code> dan <code>opacity: 1</code>. Teknik ini menciptakan efek fokus sinematik di mana elemen yang dilihat pengguna menjadi sangat menonjol sementara elemen sekitarnya memudar.</p>
+
+  <p>Setiap kartu galeri juga memiliki animasi Framer Motion <code>whileHover={{ scale: 1.05 }}</code>, gambar internal yang membesar (<code>group-hover:scale-110</code> dengan <code>transition-transform duration-700</code>), overlay gelap yang mengintensif (<code>bg-midnight-violet/20</code> &rarr; <code>bg-midnight-violet/70</code>), serta label teks tengah yang muncul dengan efek <code>translate-y-4 &rarr; translate-y-0</code>.</p>
+</div>
+
+<!-- 2.5 CONTACT -->
+<div class="section">
+  <h3>2.5 Halaman VIP Contact — Formulir Premium</h3>
+  <div class="img-block">
+    <img src="./ss-contact.png" alt="Contact Form" />
+    <p class="caption">Gambar 5 — Formulir kontak VIP dengan desain minimalis</p>
+  </div>
+  <p>Halaman VIP Contact menampilkan formulir <em>inquiry</em> premium dengan pendekatan desain minimalis. Seluruh <em>input field</em> menggunakan kelas kustom <code>.glass-input</code> yang didefinisikan sebagai: <code>background: transparent; border: none; border-bottom: 2px solid rgba(183,110,121,0.5)</code>. Desain ini menghilangkan <em>border</em> luar konvensional dan hanya menampilkan garis bawah Rose Gold, menciptakan kesan bersih dan elegan. Saat fokus, warna <em>border-bottom</em> bertransisi ke <code>#B76E79</code> solid.</p>
+
+  <p>State management formulir menggunakan React Hook <code>useState</code> dengan objek tunggal (<code>{ name, email, phone, message }</code>) dan handler <code>onChange</code> terpusat yang memanfaatkan <em>computed property name</em> (<code>[e.target.name]: e.target.value</code>). Setiap field memiliki ikon dari library Lucide React (User, Mail, Phone, MessageSquare) yang ditempatkan di dalam elemen <code>&lt;label&gt;</code> untuk aksesibilitas. Tombol submit menggunakan kelas <code>.glass .glow-rose</code> dan menampilkan feedback visual berupa teks "✓ Inquiry Sent Successfully" berwarna <em>emerald</em> selama 4 detik setelah pengiriman.</p>
+
+  <p>Animasi masuk setiap field menggunakan <code>initial={{ opacity: 0, x: -20 }}</code> dengan <code>delay</code> berjenjang (0.3s, 0.4s, 0.5s, 0.6s) untuk menciptakan efek <em>stagger</em> yang mulus dari kiri ke kanan.</p>
+</div>
+
+<!-- 2.6 FOOTER -->
+<div class="section">
+  <h3>2.6 Footer — Personal Branding</h3>
+  <div class="img-block">
+    <img src="./ss-footer.png" alt="Footer" />
+    <p class="caption">Gambar 6 — Footer dengan informasi navigasi dan personal branding</p>
+  </div>
+  <p>Komponen Footer didesain sebagai penutup visual yang konsisten di seluruh halaman. Struktur dasarnya menggunakan grid tiga kolom (<code>grid grid-cols-1 md:grid-cols-3 gap-12</code>) yang memuat: (1) identitas brand dengan tagline, (2) tautan navigasi menggunakan komponen <code>NavLink</code> dari React Router, dan (3) informasi kontak. Sebuah garis dekoratif di bagian atas menggunakan <code>bg-gradient-to-r from-transparent via-rose-gold/40 to-transparent</code> untuk memberikan separasi visual yang halus.</p>
+
+  <p>Di bagian paling bawah footer, pada sisi kanan, terdapat elemen <em>personal branding</em> pengembang dengan teks <strong>"Made by Nesya Kirani Nurroffi"</strong>. Teks ini menggunakan styling <code>text-white/20 text-xs tracking-wider</code> yang konsisten dengan estetika keseluruhan footer — cukup terlihat sebagai kredit pembuat namun tidak mendominasi hierarki visual.</p>
+</div>
+
+<!-- ============ PENUTUP ============ -->
+<div class="section">
+  <h2>3. Kesimpulan</h2>
+  <p>Proyek <strong>Lamborghini Vision</strong> mendemonstrasikan penerapan komprehensif dari teknologi <em>frontend</em> modern dalam membangun pengalaman web yang imersif dan premium. Integrasi antara React.js sebagai <em>UI library</em>, Tailwind CSS sebagai <em>utility-first CSS framework</em>, dan Framer Motion sebagai <em>animation engine</em> menghasilkan antarmuka yang tidak hanya estetis, tetapi juga performan dan responsif di berbagai perangkat.</p>
+  <p>Teknik-teknik lanjutan yang diimplementasikan — seperti <em>Gatekeeper pattern</em> untuk bypass kebijakan autoplay, <em>spring physics animation</em> untuk transisi yang natural, <em>parent-hover CSS trick</em> untuk efek fokus galeri, dan arsitektur komponen modular — menunjukkan pemahaman mendalam terhadap prinsip-prinsip rekayasa perangkat lunak <em>frontend</em> yang profesional.</p>
+</div>
+
+<div class="footer-doc">
+  <p><strong>Laporan Dokumentasi Aplikasi — Lamborghini Vision</strong></p>
+  <p>Disusun oleh Nesya Kirani Nurroffi &bull; XI PPLG-RPL 2 &bull; 2026</p>
+</div>
+
+</body>
+</html>
