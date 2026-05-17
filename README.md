@@ -24,4 +24,16 @@ Sebuah aplikasi *landing page* animasi premium yang dirancang dengan estetika *D
 * **Class:** XI PPLG 2
 * **Project Type:** Tugas Aplikasi Landing Page Animasi
 
-> *"Designed for those who turn heads without trying. Power sculpted in elegance."*
+> *"Designed for those who turn heads without trying. Power sculpted in elegance."*<
+
+---
+
+
+
+<div align="center">
+
+  <p><i>Developed with 🤍 and attention to detail.</i></p>
+
+  <p><b>© 2026 Nesya Kirani Nurroffi. All rights reserved.</b></p>
+
+</div> 
