@@ -24,7 +24,7 @@ Sebuah aplikasi *landing page* animasi premium yang dirancang dengan estetika *D
 * **Class:** XI PPLG 2
 * **Project Type:** Tugas Aplikasi Landing Page Animasi
 
-> *"Designed for those who turn heads without trying. Power sculpted in elegance."*<
+> *"Designed for those who turn heads without trying. Power sculpted in elegance."*
 
 ---
 
