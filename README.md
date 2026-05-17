@@ -19,7 +19,7 @@ Sebuah aplikasi *landing page* animasi premium yang dirancang dengan estetika *D
 - **Animations:** Framer Motion
 - **Routing:** React Router DOM
 
-## 👨‍💻 Developer Information
+## 👩‍💻 Developer Information
 * **Name:** Nesya Kirani Nurroffi
 * **Class:** XI PPLG 2
 * **Project Type:** Tugas Aplikasi Landing Page Animasi
